@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shop page</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<link rel="stylesheet" href="../assets/css/style.css" />
+		<link rel="stylesheet" href="../assets/css/output.css" />
+		<link rel="stylesheet" href="/assets/css/shop_page.css" />
+	</head>
+
+	<body>
+		<header></header>
+		<main>
+			<div>
+				<img
+					src="/assets/images/img_shop_page/background_shop_page.png"
+					alt="background"
+					width="100%"
+					class="background1"
+				/>
+			</div>
+			<div class="main_content">
+				<form
+					class="container mx-auto flex flex-col flex-wrap justify-center gap-3 px-6 pb-5 pt-[100px] filter md:flex-row md:items-center md:px-5 xl:max-w-[1200px]"
+					name="form-filter"
+				>
+					<div
+						class="item flex h-12 w-full items-center justify-start gap-3 overflow-hidden rounded-lg border border-[#ced4da] sm:min-w-[350px] md:flex-1 lg:w-1/4"
+					>
+						<label
+							for="category"
+							class="text-md hidden h-full w-[150px] flex-shrink-0 items-center bg-primary-light py-2 pl-3 sm:flex"
+							>Category</label
+						>
+						<select
+							name="category"
+							id="category"
+							class="h-full flex-1 px-3 outline-none sm:mr-3 sm:px-0"
+						>
+							<option value="">Choose category</option>
+							<option value="accessories" null="">Accessories</option>
+							<option value="phone" null="">Phone</option>
+							<option value="phone case" null="">Phone case</option>
+							<option value="watch" null="">Watch</option>
+						</select>
+					</div>
+					<div
+						class="item flex h-12 w-full items-center justify-start gap-3 overflow-hidden rounded-lg border border-[#ced4da] sm:min-w-[350px] md:flex-1 lg:w-1/4"
+					>
+						<label
+							for="Status"
+							class="text-md hidden h-full w-[150px] flex-shrink-0 items-center bg-primary-light py-2 pl-3 sm:flex"
+							>Status
+						</label>
+						<select
+							name="status"
+							id="status"
+							class="h-full flex-1 px-3 outline-none sm:mr-3 sm:px-0"
+						>
+							<option value="">Choose status</option>
+							<option value="true">New products</option>
+							<option value="false">Old products</option>
+						</select>
+					</div>
+
+					<div
+						class="item flex h-12 w-full items-center justify-start gap-3 overflow-hidden rounded-lg border border-[#ced4da] sm:min-w-[350px] md:flex-1 lg:w-1/4"
+					>
+						<label
+							class="text-md hidden sm:flex h-full flex-shrink-0 items-center bg-primary-light px-3 py-2 sm:w-[150px] sm:pl-3 sm:pr-0"
+							for="minPrice"
+							>Min Price</label
+						>
+
+						<input
+							type="number"
+							name="minPrice"
+							class="w-full py-2 outline-none text-[#212529] flex-1 px-3 md:pl-0 md:pr-3 form-control"
+							placeholder="Min Price"
+							autocomplete=""
+							value=""
+						/>
+					</div>
+
+					<div
+						class="border border-[#ced4da] flex gap-3 h-12 item items-center justify-start lg:w-1/4 md:flex-1 overflow-hidden rounded-lg sm:min-w-[350px] w-full"
+					>
+						<label
+							class="text-md hidden sm:flex h-full flex-shrink-0 items-center bg-primary-light px-3 py-2 sm:w-[150px] sm:pl-3 sm:pr-0"
+							for="maxPrice"
+							>Max Price</label
+						>
+
+						<input
+							type="number"
+							name="maxPrice"
+							class="w-full py-2 outline-none text-[#212529] flex-1 px-3 md:pl-0 md:pr-3 form-control"
+							placeholder="Max Price"
+							autocomplete=""
+							value=""
+						/>
+					</div>
+
+					<div
+						class="border border-[#ced4da] flex gap-3 h-12 item items-center justify-start lg:w-1/4 md:flex-1 overflow-hidden rounded-lg sm:min-w-[350px] w-full"
+					>
+						<label
+							class="text-md hidden sm:flex h-full flex-shrink-0 items-center bg-primary-light px-3 py-2 sm:w-[150px] sm:pl-3 sm:pr-0"
+							for="search"
+							>Search products</label
+						>
+
+						<input
+							type="text"
+							name="search"
+							class="w-full py-2 outline-none text-[#212529] flex-1 px-3 md:pl-0 md:pr-3 form-control"
+							placeholder="Search products"
+							autocomplete=""
+							value=""
+						/>
+					</div>
+
+					<button
+						class="item search-product flex h-full w-max flex-shrink-0 flex-grow-0 items-center justify-center rounded-lg bg-green-active px-7 py-3 text-white"
+					>
+						Search
+					</button>
+				</form>
+
+				<div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+					<div class="title">Customers also purchased</div>
+					<div
+						class="content1 mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+					>
+						Loading
+					</div>
+				</div>
+				<nav
+					class="mt-10 pagination container mx-auto flex flex-row justify-center gap-3 px-6 items-center md:px-5 xl:max-w-[1200px]"
+					aria-label="Pagination"
+				>
+					<div class="isolate inline-flex h-10 gap-2 -space-x-px rounded-md">
+						<button
+							class="prev-page relative flex h-10 w-10 items-center justify-center rounded-l-md px-2 py-2 text-dark"
+						>
+							<span><img src="../assets/icons/back.svg" /></span>
+						</button>
+						<span
+							class="count-page text-md relative z-10 inline-flex h-10 w-10 items-center justify-center rounded-md border-[2px] border-green-active font-semibold text-dark"
+							>1</span
+						>
+						<button
+							class="hover:bg-primary-light bg-white border-green-active border-[2px] next-page relative flex h-10 w-10 items-center justify-center rounded-r-md px-2 py-2 text-dark"
+						>
+							<span><img src="../assets/icons/next.svg" /></span>
+						</button>
+					</div>
+				</nav>
+			</div>
+		</main>
+		<footer class="container mx-auto pb-5 pt-[100px] md:px-5 xl:max-w-[1200px]"></footer>
+		<div class="preview_cart pointer-events-auto z-20 fixed inset-y-0 right-0 mt-[60px] w-screen max-w-md flex-col overflow-hidden hidden"></div>
+		<script type="module" src="../assets/js/Header.js"></script>
+		<script src="../assets/js/Footer.js"></script>
+		<script type="module" src="../assets/js/index.js"></script>
+		<script type="module" src="../assets/js/shop_page.js"></script>
+		<script type="module" src="../assets/js/PreviewCart.js"></script>
+	</body>
+</html>

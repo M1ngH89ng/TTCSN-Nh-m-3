@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_content {
+    margin: 0px 55px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: -10px;
+    margin-left: 7px;
+}
+
+.background {
+    background-color: #088178;
+    width: 290px;
+    height: 453.42px;
+    border-radius: 4%;
+    padding-top: 1px;
+}
+
+/* .img {
+    width: 266px;
+    height: 315.42px;
+    margin: 12px;
+    overflow: hidden;
+    border-radius: 4%;
+
+} */
+
+.phonename {
+    color: white;
+    margin: 12px;
+}
+
+.content_swap {
+    margin: 12px;
+}
+
+.money {
+    text-decoration: line-through;
+    color: white;
+    margin: 10px 12px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background: pink;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.content_swap {
+    width: 100px;
+}
+
+.circle {
+    float: left;
+    text-align: center;
+}
+
+.nd {
+    width: 55px;
+    padding: 3.5px 7px;
+    float: left;
+    text-align: center;
+}
+
+
+.listPage {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.listPage li {
+    background-color: #ffffffBD;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 100px 10px 0px;
+    cursor: pointer;
+}
+
+.listPage .active {
+    background-color: #088178;
+    color: #ffffff;
+}
+
+
+
+
+@media (max-width:960px) {
+    .background1 {
+        width: 100%;
+    }
+
+
+    .select {
+        width: 280px;
+        margin-left: 14.5px;
+    }
+
+    .listPage {
+        margin: 60px;
+    }
+}
+
+@media (max-width:724px) {
+    .background1 {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:354px) {
+    .background1 {
+        width: 100%;
+    }
+
+    .main_content {
+        margin: 0px 20px;
+    }
+
+    .content1 {
+        grid-template-columns: 25%;
+        margin-left: 70px;
+    }
+
+    .listPage {
+        margin-left: -10px;
+        margin-top: 650px;
+    }
+
+    .listPage li {
+        padding: 4px 7.5px;
+        margin: 0px 1px;
+    }
+}
